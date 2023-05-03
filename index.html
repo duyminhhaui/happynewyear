@@ -1,56 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Year Countdown Fireworks</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/app.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./img/CILKGax.png" />
+        <!-- 1. Tiêu đề của file index -->
+        <title>Happy birthday</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="page__main">
+        <div class="buttons">
+            <!-- Chữ ở menu bạn có thể sửa lại theo ý của bạn -->
+            <a href="index.html" class="btn btn-bir">Sinh nhật</a>
+            <a href="timeline.html" class="btn btn-timeline">Lời Chúc</a>
+        </div>
 
-  <body>
-    <div class="content-wrapper">
-      <p class="header">Countdown to new year</p>
-      <h1 class="year" id="new-year">0000</h1>
-      <div class="timer">
-        <div class="timer-box">
-          <div class="timer-box__count">
-            <span id="days">0</span>
-          </div>
-          <div class="timer-box__text">Days</div>
-        </div>
-        <div class="timer-box">
-          <div class="timer-box__count">
-            <span id="hours">0</span>
-          </div>
-          <div class="timer-box__text">Hours</div>
-        </div>
-        <div class="timer-box">
-          <div class="timer-box__count">
-            <span id="minutes">0</span>
-          </div>
-          <div class="timer-box__text">Minutes</div>
-        </div>
-        <div class="timer-box">
-          <div class="timer-box__count">
-            <span id="seconds">0</span>
-          </div>
-          <div class="timer-box__text">Seconds</div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="fireworks-container"
-      style="background-image: url(./assets/moon_space_night-1244622.jpg)"
-    ></div>
+        <!-- 2. Phần ảnh của người bạn mún chúc -->
+        <img src="./img/linh.jpg" alt="" class="cover" />
 
-    <script src="./js/fireworks.js"></script>
-    <script src="./js/app.js"></script>
-  </body>
+        <!-- 3. Phần nhạc -->
+        <audio id="player" autoplay loop>
+            <source src="./music/music.mp3" type="audio/mp3" />
+        </audio>
+    </body>
 </html>
